@@ -4,7 +4,7 @@ A new Flutter project.
 
 ## Screan Shoot Apps
 
-![Screan Shoot 1](images/Screenshot_1603647742.png) | ![Screan Shoot 2](images/Screenshot_1603647750.png) | ![Screan Shoot 3](images/Screenshot_1603647754.png)
+![Screan Shoot 1](images/Screenshot_1603647742.png){:height="200px" width="200px"} | ![Screan Shoot 2](images/Screenshot_1603647750.png){:height="200px" width="200px"} | ![Screan Shoot 3](images/Screenshot_1603647754.png){:height="200px" width="200px"}
 
 ### Getting Started
 
