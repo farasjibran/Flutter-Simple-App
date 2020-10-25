@@ -1,11 +1,45 @@
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:splashscreen/splashscreen.dart';
 import 'package:tutorial_flutter/pages/experience.dart';
 import 'package:tutorial_flutter/pages/portofolio.dart';
 import 'package:tutorial_flutter/pages/profile.dart';
 
 void main() {
-  runApp(MaterialApp(home: MyHomePage()));
+  // runApp(MaterialApp(home: MyHomePage()));
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Tutorial Flutter',
+      theme: ThemeData(
+        primarySwatch: Colors.grey,
+      ),
+      home: Splash(),
+      debugShowCheckedModeBanner: false,
+    );
+  }
+}
+
+class Splash extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return SplashScreen(
+      seconds: 6,
+      navigateAfterSeconds: new MyHomePage(),
+      title: new Text(
+        'Tentang Saya',
+        textScaleFactor: 2,
+      ),
+      image: new Image.asset('images/man.png'),
+      loadingText: Text("Loading"),
+      photoSize: 100.0,
+      loaderColor: Colors.blue,
+    );
+  }
 }
 
 class MyHomePage extends StatefulWidget {
@@ -51,12 +85,26 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         bottomNavigationBar: CurvedNavigationBar(
-          backgroundColor: Colors.grey,
+          buttonBackgroundColor: Colors.blue,
+          color: Colors.blue,
+          backgroundColor: Colors.white,
           key: _bottomNavigationKey,
           items: <Widget>[
-            Icon(Icons.person, size: 30),
-            Icon(Icons.school, size: 30),
-            Icon(Icons.library_books, size: 30),
+            Icon(
+              Icons.person,
+              size: 30,
+              color: Colors.white,
+            ),
+            Icon(
+              Icons.school,
+              size: 30,
+              color: Colors.white,
+            ),
+            Icon(
+              Icons.library_books,
+              size: 30,
+              color: Colors.white,
+            ),
           ],
           onTap: (int page) {
             setState(() {
@@ -65,7 +113,7 @@ class _MyHomePageState extends State<MyHomePage> {
           },
         ),
         body: Container(
-          color: Colors.grey,
+          color: Colors.white,
           child: Center(
             child: _showPage,
           ),
