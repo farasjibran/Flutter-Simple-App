@@ -4,9 +4,14 @@ A new Flutter project.
 
 ## Screan Shoot Apps
 
-<img src="images/Screenshot_1603647742.png" width="150">
-<img src="images/Screenshot_1603647750.png" width="150">
-<img src="images/Screenshot_1603647754.png" width="120">
+<div class="row">
+    <div class="col">
+        <img src="images/Screenshot_1603647742.png" width="150">
+        <img src="images/Screenshot_1603647750.png" width="150">
+        <img src="images/Screenshot_1603647754.png" width="150">
+</div>
+</div>
+
 <!-- ![Screan Shoot 1](images/Screenshot_1603647742.png) | ![Screan Shoot 2](images/Screenshot_1603647750.png) | ![Screan Shoot 3](images/Screenshot_1603647754.png) -->
 
 ### Getting Started
