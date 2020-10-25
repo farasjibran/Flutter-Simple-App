@@ -6,8 +6,8 @@ A new Flutter project.
 
 <div class="row">
     <div class="col">
-        <img src="images/Screenshot_1603647742.png" width="220" style="margin-right: 40px">
-        <img src="images/Screenshot_1603647750.png" width="220" style="margin-right: 40px">
+        <img src="images/Screenshot_1603647742.png" width="220" style="margin-right: 40px;">
+        <img src="images/Screenshot_1603647750.png" width="220" style="margin-right: 40px;">
         <img src="images/Screenshot_1603647754.png" width="220">
 </div>
 </div>
